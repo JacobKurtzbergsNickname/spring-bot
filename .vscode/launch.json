@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-Robotticelli<robotticelli>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.springbot.robotticelli.Robotticelli",
+      "projectName": "robotticelli",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
