@@ -26,13 +26,15 @@
           <p th:text="'Author: ' + ${robot.author}"></p>
           <p th:text="'Country: ' + ${robot.country}"></p>
           <p th:text="'Year: ' + ${robot.year}"></p>
-          <ul>
-            <li th:each="medium : ${robot.media}">
-              <p th:text="'Type: ' + ${medium.type}"></p>
-              <p th:text="'Title: ' + ${medium.title}"></p>
-              <p th:text="'Year: ' + ${medium.year}"></p>
-            </li>
-          </ul>
+          <div class="border-2 border-olive p-4 m-4">
+            <ul>
+              <li th:each="medium : ${robot.media}">
+                <p th:text="'Type: ' + ${medium.type}"></p>
+                <p th:text="'Title: ' + ${medium.title}"></p>
+                <p th:text="'Year: ' + ${medium.year}"></p>
+              </li>
+            </ul>
+          </div>
         </div>
       </li>
     </ul>

@@ -8,6 +8,9 @@ import com.springbot.robotticelli.services.RobotService;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
 
 /**
  * @author Kirby, Chabby
@@ -29,4 +32,12 @@ public class RobotApiController {
     robots.put("robots", robotEntities.toString());
     return robots;
   }
+
+  @PostMapping("/robots")
+  public Robot postRobotsToApi(@RequestBody Robot entity) {
+    System.out.println(entity);
+    robotService.createRobot(entity);
+    return entity;
+  }
+
 }

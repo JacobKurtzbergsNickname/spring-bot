@@ -19,4 +19,9 @@ public class RobotService {
   public List<Robot> getRobots() {
     return robotRepository.findAll();
   }
+
+  public Robot createRobot(Robot robot) {
+    robotRepository.save(robot);
+    return robot;
+  }
 }

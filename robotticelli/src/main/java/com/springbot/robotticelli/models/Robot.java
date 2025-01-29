@@ -20,11 +20,11 @@ public class Robot {
   private String year;
 
   @ElementCollection
-  private List<Medium> media;
+  private List<Long> media;
 
   public Robot() {}
 
-  public Robot(String name, String author, String country, String year, List<Medium> media) {
+  public Robot(String name, String author, String country, String year, List<Long> media) {
     this.name = name;
     this.author = author;
     this.country = country;
@@ -72,11 +72,11 @@ public class Robot {
     this.year = year;
   }
 
-  public List<Medium> getMedia() {
+  public List<Long> getMedia() {
     return media;
   }
 
-  public void setMedia(List<Medium> media) {
+  public void setMedia(List<Long> media) {
     this.media = media;
   }
 

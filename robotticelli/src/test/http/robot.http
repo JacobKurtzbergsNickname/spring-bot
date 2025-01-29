@@ -1,0 +1,20 @@
+### GET /robots
+GET http://localhost:8081/robots
+
+
+### GET /api/robots
+GET http://localhost:8081/api/robots
+
+
+### POST /api/robots
+POST http://localhost:8081/api/robots
+Content-Type: application/json; charset=UTF-8
+
+{
+  "name": "Rossumův Univerzální Robot",
+  "author": "Karel Čapek",
+  "year": 1920,
+  "media": [
+    2
+  ]
+}

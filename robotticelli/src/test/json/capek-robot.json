@@ -1,4 +1,9 @@
 {
-  "id": "SB0001",
-  "name": "Rossumův Univerzální Robot"
+  "id": 2,
+  "name": "Rossumův Univerzální Robot",
+  "author": "Karel Čapek",
+  "year": 1920,
+  "media": [
+    2
+  ]
 }
